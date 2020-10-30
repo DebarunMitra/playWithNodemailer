@@ -19,6 +19,10 @@ app.get('/', (req, res) => {
     // res.send("")
 });
 
+app.post('/send', (req, res) => {
+    console.log(req.body);
+})
+
 const PORT = process.env.PORT || 7000;
 
 app.listen(PORT, () => console.log(`Server up at ${PORT}...`));
